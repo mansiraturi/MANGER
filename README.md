@@ -34,5 +34,5 @@ Website Preview
 </table>
 
 <h4 align="center">
-Copyright © 2020 Likhit Garimella
+Copyright © 2021 mansiraturi
 </h4>
