@@ -1,0 +1,127 @@
+/* navbar */
+.row{
+  padding: 0px;
+}
+.container-fluid{
+ padding: 1% 10% 0.1%;
+ vertical-align: middle;
+}
+.navbar{
+  padding:0 0 2.5rem;
+}
+.navbar-brand {
+  /* font-family: "Ubuntu"; */
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+.nav-item{
+  padding: 0 18px;
+  color: white;
+  font-size: 1.5rem;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light", sans-serif;
+  font-weight: 100;
+}
+.fa-shopping-cart{
+  color: #ffffff;
+  font-size: 2.4rem;
+
+}
+
+.me-2{
+  width: 400px;
+  padding-right: 50px;
+}
+
+
+.btn-outline-success{
+color:#fdca40;
+border-color: #fdca40;
+}
+.btn-outline-success:hover,
+.btn-outline-success:active {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #fdca40;
+}
+
+/* Menu */
+h1{
+  text-align: center;
+  color: #fdca40;
+}
+
+.row{
+  padding: 8%;
+}
+.col-lg-3{
+  padding: 1%;
+}
+.slides{
+  width: 100%;
+  border-radius: 20%;
+}
+/* restaurant */
+#restaurant{
+  background-color: #fdca40;
+  }
+
+  .menu-hd{
+    padding-left: 10%;
+    font-size: 3.4rem;
+    color: white;
+
+  }
+
+  #itemInput{
+    margin-left: 45%;
+  }
+
+
+  .cart-header {
+      font-weight: bold;
+      font-size: 1.25em;
+      color: #333;
+  }
+
+  .cart-column {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid black;
+      margin-right: 1.5em;
+      padding-bottom: 10px;
+      margin-top: 10px;
+  }
+
+  .cart-row {
+      display: flex;
+  }
+
+  .cart-item {
+      width: 45%;
+  }
+
+  .cart-price {
+      width: 20%;
+      font-size: 1.2em;
+      color: #333;
+  }
+
+  .cart-quantity {
+      width: 35%;
+  }
+
+  .cart-item-title {
+      color: #333;
+      margin-left: .5em;
+      font-size: 1.2em;
+  }
+
+  .cart-item-image {
+      width: 75px;
+      height: auto;
+      border-radius: 10px;
+  }

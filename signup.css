@@ -1,0 +1,184 @@
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+
+}
+
+h2{
+  font: Karla;
+  font-weight: bold;
+color: white;
+}
+
+.container{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+ #bg{
+   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("resources/css/img/food.jpg");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("resources/css/img/food.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   background-attachment: fixed;
+   filter: blur(8px);
+ -webkit-filter: blur(8px);
+ }
+
+ .title-img{
+   width: 22%;
+   margin-left: 25%;
+   margin-top: 0.2%;
+   transform: rotate(20deg);
+ position: absolute;
+ }
+
+/* .bgimg{
+  background-image: url("C:/Users/Mansi/Downloads/HCI-Project-master/resources/css/img/food.jpg");
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  opacity: 0.5;
+  height: 40vh;
+  background-attachment: fixed;
+/* width: 80%;
+height: 600px;
+background-size: cover;
+  background-position: center;
+
+} */
+
+.login-card {
+  border: 0;
+  border-radius: 27.5px;
+  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  overflow: hidden;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 1px solid #f1f1f1;
+padding-top: 2%;
+  /* margin-bottom: 5%; */
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 63%;
+  padding: 20px;
+}
+
+.login-card-img {
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  -o-object-fit: cover;
+  object-fit: cover;
+border-top-left-radius: 5%;
+border-bottom-left-radius: 5%;
+
+}
+
+.login-card .card-body {
+  padding: 50px 60px 60px;
+}
+
+@media (max-width: 422px) {
+  .login-card .card-body {
+    padding: 35px 24px;
+  }
+}
+
+.login-card-description {
+  font-size: 25px;
+  color: #fdca40;
+  font-weight: normal;
+  margin-bottom: 23px;
+}
+
+.login-card form {
+  max-width: 326px;
+  background-color: transparent;
+}
+
+.login-card .form-control {
+  border: 1px solid #d5dae2;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  min-height: 45px;
+  font-size: 13px;
+  line-height: 15;
+  font-weight: normal;
+}
+
+.login-card .form-control::-webkit-input-placeholder {
+  color: #919aa3;
+}
+
+.login-card .form-control::-moz-placeholder {
+  color: #919aa3;
+}
+
+.login-card .form-control:-ms-input-placeholder {
+  color: #919aa3;
+}
+
+.login-card .form-control::-ms-input-placeholder {
+  color: #919aa3;
+}
+
+.login-card .form-control::placeholder {
+  color: #919aa3;
+}
+
+.login-card .login-btn {
+  padding: 13px 20px 12px;
+  background-color: #F59D00;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.login-card .login-btn:hover {
+  border: 1px solid #F59D00;
+  background-color: transparent;
+  color: #F59D00;
+}
+
+.login-card .forgot-password-link {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.login-card-footer-text {
+  font-size: 16px;
+  color: #F59D00;
+  margin-bottom: 60px;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .login-card-footer-text {
+    margin-bottom: 24px;
+  }
+}
+
+.login-card-footer-nav a {
+  font-size: 14px;
+  color: #919aa3;
+}
+
+.footer-link {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
