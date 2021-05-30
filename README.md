@@ -1,5 +1,5 @@
 <h1 align="center">
-Omnifood Website
+manger Website
 </h1>
 
 <h2 align="center">
