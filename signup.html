@@ -13,42 +13,7 @@
 </head>
 
 <body>
-  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyAW7fiWL1UCiXU1X3nUEUlZ7T9n7o7hyYI",
-      authDomain: "manger-92c46.firebaseapp.com",
-      projectId: "manger-92c46",
-      storageBucket: "manger-92c46.appspot.com",
-      messagingSenderId: "767559589262",
-      appId: "1:767559589262:web:1b0e76455f7d43825958df"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
-  <script>
-    function createacc(e) {
-      e.preventDefault();
-      console.log("aakar");
-      email = document.getElementById("email").value;
-      pass = document.getElementById("password").value;
-      firebase.auth().createUserWithEmailAndPassword(email, pass)
-        .then((userCredential) => {
-          // Signed in 
-          var user = userCredential.user;
-          localStorage.setItem("user", JSON.stringify(user));
-          location.href("menu.html");
-        })
-        .catch((error) => {
-          var errorCode = error.code;
-          var errorMessage = error.message;
-          console.log(errorMessage);
-          // ..
-        });
-      return false;
-    }
-  </script>
+
   <section id="bg">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -99,7 +64,7 @@
               <div class="card-body">
                 <h2>Signup</h2>
                 <p class="login-card-description">Create your account now!</p>
-                <form name="signup-form" onsubmit=return createacc();>
+                <form name="signup-form" onsubmit="return createacc()" action="menu.html">
                   <div class="form-group">
                     <label for="Name" class="sr-only">Name</label>
                     <input type="name" name="name" id="name" class="form-control" placeholder="Name" required>
@@ -134,13 +99,43 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
 
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAW7fiWL1UCiXU1X3nUEUlZ7T9n7o7hyYI",
+      authDomain: "manger-92c46.firebaseapp.com",
+      projectId: "manger-92c46",
+      storageBucket: "manger-92c46.appspot.com",
+      messagingSenderId: "767559589262",
+      appId: "1:767559589262:web:1b0e76455f7d43825958df"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script>
+    function createacc() {
+      // e.preventDefault();
+      console.log("aakar");
+      email = document.getElementById("email").value;
+      pass = document.getElementById("password").value;
+      firebase.auth().createUserWithEmailAndPassword(email, pass)
+        .then((userCredential) => {
+          // Signed in 
+          var user = userCredential.user;
+          localStorage.setItem("user", JSON.stringify(user));
+        })
+        .catch((error) => {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          console.log(errorMessage);
+          return false;
+          // ..
+        });
+      return false;
+    }
+  </script>
 </body>
 
 </html>
